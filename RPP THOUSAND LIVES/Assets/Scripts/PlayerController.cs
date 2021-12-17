@@ -43,6 +43,10 @@ public class PlayerController : MonoBehaviour
 
     private Animator _playerAnimator;
 
+    private bool _isActive;
+
+    private bool _isDead;
+
     private void OnEnable()
     {
         playerInput.onActionTriggered += PlayerInputOnActionTriggered;
@@ -60,13 +64,17 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<Animator>();
         _gameInput = new GameInput();
-        
+        _isActive = true;
+
     }
 
     private void Update()
     {
-        CheckGround();
-        AnimationUpdaates();
+        if (_isActive)
+        {
+            CheckGround();
+            AnimationUpdaates();
+        }
     }
 
     // Update is called once per frame
@@ -76,11 +84,16 @@ public class PlayerController : MonoBehaviour
         _rigidbody2D.AddForce(_movimento * velocidade);
         if (Mathf.Abs(_rigidbody2D.velocity.x) > maxSpeed)
             _rigidbody2D.velocity = new Vector2(Mathf.Sign(_rigidbody2D.velocity.x) * maxSpeed, _rigidbody2D.velocity.y);
-        */  
-        _rigidbody2D.velocity = new Vector2(_movimento.x * velocidade * Time.fixedDeltaTime, _rigidbody2D.velocity.y); 
-        if(_isMovingRight && _movimento.x > 0) Flip();
-        if(!_isMovingRight && _movimento.x < 0 ) Flip();
-        Jump();
+        */
+
+        if (_isActive)
+        {
+            _rigidbody2D.velocity = new Vector2(_movimento.x * velocidade * Time.fixedDeltaTime, _rigidbody2D.velocity.y); 
+            if(_isMovingRight && _movimento.x > 0) Flip();
+            if(!_isMovingRight && _movimento.x < 0 ) Flip();
+            Jump();
+        }
+       
        
     }
 
@@ -161,6 +174,18 @@ public class PlayerController : MonoBehaviour
             }
 
             if (obj.canceled) _doJump = false;
+
+            if (obj.performed && !_isActive)
+            {
+                if (_isDead)
+                {
+                    GameManager.instance.CheckDeath();
+                }
+                else
+                {
+                    GameManager.instance.LoadNextLevel();
+                }
+            }
         }
     }
 
@@ -169,6 +194,40 @@ public class PlayerController : MonoBehaviour
         _isMovingRight = !_isMovingRight;
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Kill"))
+        {
+            KillPlayer();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Victory"))
+        {
+            OnVictory();
+        }
+    }
+
+    private void KillPlayer()
+    {
+        _isDead = true;
+        _isActive = false;
+        _rigidbody2D.bodyType = RigidbodyType2D.Static;
+        _playerAnimator.SetBool("Active", _isActive);
+        _playerAnimator.Play("ThrudDead");
+    }
+
+    private void OnVictory()
+    {
+        _isActive = false;
+        _rigidbody2D.bodyType = RigidbodyType2D.Static;
+        _playerAnimator.SetBool("Active", _isActive);
+        // animação de vitoria
+    }
+
     private void OnDrawGizmos()
     {
         //Debug.DrawLine(start: transform.position, end: (Vector3)transform.position + groundOffSet, Color.red);
