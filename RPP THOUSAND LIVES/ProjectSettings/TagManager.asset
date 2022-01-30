@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Victory
   - Kill
+  - Ground
   layers:
   - Default
   - TransparentFX
