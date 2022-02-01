@@ -1,7 +1,64 @@
 fileFormatVersion: 2
 guid: 15256844d0e68a84db2e4d34dcf549bc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3741160911951556087
+    second: Thrud Chutano clone (1)_0
+  - first:
+      213: -3153553733804468627
+    second: Thrud Chutano clone (1)_1
+  - first:
+      213: 2400297223616764268
+    second: Thrud Chutano clone (1)_2
+  - first:
+      213: -665272808007937648
+    second: Thrud Chutano clone (1)_3
+  - first:
+      213: -6302097280378788597
+    second: Thrud Chutano clone (1)_4
+  - first:
+      213: 6263744384903055373
+    second: Thrud Chutano clone (1)_5
+  - first:
+      213: 7162960682987639311
+    second: Thrud Chutano clone (1)_6
+  - first:
+      213: -5552947859468608438
+    second: Thrud Chutano clone (1)_7
+  - first:
+      213: 2553593082652974360
+    second: Thrud Chutano clone (1)_8
+  - first:
+      213: -4469018401803947796
+    second: Thrud Chutano clone (1)_9
+  - first:
+      213: -5912070910931980911
+    second: Thrud Chutano clone (1)_10
+  - first:
+      213: 224014263303209599
+    second: Thrud Chutano clone (1)_11
+  - first:
+      213: -6607398032654421146
+    second: Thrud Chutano clone (1)_12
+  - first:
+      213: 8930234252899888442
+    second: Thrud Chutano clone (1)_13
+  - first:
+      213: 3242182117526110121
+    second: Thrud Chutano clone (1)_14
+  - first:
+      213: -5853538324117723609
+    second: Thrud Chutano clone (1)_15
+  - first:
+      213: 904796880341729675
+    second: Thrud Chutano clone (1)_16
+  - first:
+      213: 5870639832053300495
+    second: Thrud Chutano clone (1)_17
+  - first:
+      213: 2185901434451304350
+    second: Thrud Chutano clone (1)_18
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +98,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +132,420 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1240
+        width: 224
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9021d8bd8f9b41cc0800000000000000
+      internalID: -3741160911951556087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1240
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d665a7c56935c34d0800000000000000
+      internalID: -3153553733804468627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1240
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6998098b919f4120800000000000000
+      internalID: 2400297223616764268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 856
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091d5f7e7e974c6f0800000000000000
+      internalID: -665272808007937648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_4
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 856
+        width: 200
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b052117d9e37a88a0800000000000000
+      internalID: -6302097280378788597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 856
+        width: 200
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d088ef1d45a4de650800000000000000
+      internalID: 6263744384903055373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 936
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0251994ac2f76360800000000000000
+      internalID: 7162960682987639311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 472
+        width: 200
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c9b14b757ffe2b0800000000000000
+      internalID: -5552947859468608438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_8
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 472
+        width: 200
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ddc60116f207320800000000000000
+      internalID: 2553593082652974360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_9
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 648
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0bac1017bdaf1c0800000000000000
+      internalID: -4469018401803947796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_10
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 472
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19daafa74da14fda0800000000000000
+      internalID: -5912070910931980911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_11
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 600
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f720fcc19cbdb1300800000000000000
+      internalID: 224014263303209599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_12
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 608
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 663b40e2f7ecd44a0800000000000000
+      internalID: -6607398032654421146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 592
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3daf151db09eeb70800000000000000
+      internalID: 8930234252899888442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_14
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 576
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af7444457b8efc20800000000000000
+      internalID: 3242182117526110121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_15
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 568
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726e3d758ed04cea0800000000000000
+      internalID: -5853538324117723609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_16
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 560
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8186a608fb7e8c00800000000000000
+      internalID: 904796880341729675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_17
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 552
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dbbc1c2d3b87150800000000000000
+      internalID: 5870639832053300495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud Chutano clone (1)_18
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 88
+        width: 224
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f9c72f5c1e55e10800000000000000
+      internalID: 2185901434451304350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: d7b4386d35028a44b8d7fd756ec46e3e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3208371481456344541
+    second: ThrudIngameATACKINGAxe (4)_0
+  - first:
+      213: 2158608930207370821
+    second: ThrudIngameATACKINGAxe (4)_1
+  - first:
+      213: 5030921272384538022
+    second: ThrudIngameATACKINGAxe (4)_2
+  - first:
+      213: 2910929839713041013
+    second: ThrudIngameATACKINGAxe (4)_3
+  - first:
+      213: 6116980991826211082
+    second: ThrudIngameATACKINGAxe (4)_4
+  - first:
+      213: -7570034537932511868
+    second: ThrudIngameATACKINGAxe (4)_5
+  - first:
+      213: -5621838113855085459
+    second: ThrudIngameATACKINGAxe (4)_6
+  - first:
+      213: -4905943641979624340
+    second: ThrudIngameATACKINGAxe (4)_7
+  - first:
+      213: -962996332030141064
+    second: ThrudIngameATACKINGAxe (4)_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +68,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +102,210 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ThrudIngameATACKINGAxe (4)_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 848
+        width: 224
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddf2bb1ddc668c20800000000000000
+      internalID: 3208371481456344541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrudIngameATACKINGAxe (4)_1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 848
+        width: 240
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e0ffd926be4fd10800000000000000
+      internalID: 2158608930207370821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrudIngameATACKINGAxe (4)_2
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 848
+        width: 224
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5cf650e3c61d540800000000000000
+      internalID: 5030921272384538022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrudIngameATACKINGAxe (4)_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 464
+        width: 320
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a3e263443b56820800000000000000
+      internalID: 2910929839713041013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrudIngameATACKINGAxe (4)_4
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 464
+        width: 328
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a013e9b8dc1e3e450800000000000000
+      internalID: 6116980991826211082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrudIngameATACKINGAxe (4)_5
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 464
+        width: 312
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485281d02b5d1f690800000000000000
+      internalID: -7570034537932511868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrudIngameATACKINGAxe (4)_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 80
+        width: 296
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d646aee65083bf1b0800000000000000
+      internalID: -5621838113855085459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrudIngameATACKINGAxe (4)_7
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 80
+        width: 288
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64e7bb10469aebb0800000000000000
+      internalID: -4905943641979624340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrudIngameATACKINGAxe (4)_8
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 80
+        width: 224
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dd65d20ffb2a2f0800000000000000
+      internalID: -962996332030141064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

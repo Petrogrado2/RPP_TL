@@ -1,7 +1,28 @@
 fileFormatVersion: 2
 guid: fe7c2cc7f68672b4aa63f6b849fa6f08
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4816509291232271198
+    second: Thrud ingame ATACKING (2)_0
+  - first:
+      213: -3891752856943092804
+    second: Thrud ingame ATACKING (2)_1
+  - first:
+      213: -4062939383829976613
+    second: Thrud ingame ATACKING (2)_2
+  - first:
+      213: 8179287796799720700
+    second: Thrud ingame ATACKING (2)_3
+  - first:
+      213: 3486519577125503637
+    second: Thrud ingame ATACKING (2)_4
+  - first:
+      213: 4731263041723856895
+    second: Thrud ingame ATACKING (2)_5
+  - first:
+      213: -3645527576163636895
+    second: Thrud ingame ATACKING (2)_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +62,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +96,168 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Thrud ingame ATACKING (2)_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 784
+        width: 224
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a46bbe8152582db0800000000000000
+      internalID: -4816509291232271198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud ingame ATACKING (2)_1
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 784
+        width: 224
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb9b406567bdf9c0800000000000000
+      internalID: -3891752856943092804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud ingame ATACKING (2)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9aed2282a8d97c0800000000000000
+      internalID: -4062939383829976613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud ingame ATACKING (2)_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 344
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc4feb5aeaa28170800000000000000
+      internalID: 8179287796799720700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud ingame ATACKING (2)_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 272
+        width: 336
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592c201451b926030800000000000000
+      internalID: 3486519577125503637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud ingame ATACKING (2)_5
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 272
+        width: 248
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff772ec4ba2d8a140800000000000000
+      internalID: 4731263041723856895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thrud ingame ATACKING (2)_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 224
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16920ebfbfb786dc0800000000000000
+      internalID: -3645527576163636895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
