@@ -133,12 +133,12 @@ TextureImporter:
       name: Thrud morreno_0
       rect:
         serializedVersion: 2
-        x: 176
-        y: 1040
-        width: 224
-        height: 240
+        x: 0
+        y: 1024
+        width: 512
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,12 +154,12 @@ TextureImporter:
       name: Thrud morreno_1
       rect:
         serializedVersion: 2
-        x: 680
-        y: 1040
-        width: 224
-        height: 240
+        x: 512
+        y: 1024
+        width: 512
+        height: 256
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: Thrud morreno_2
       rect:
         serializedVersion: 2
-        x: 168
-        y: 784
-        width: 272
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 768
+        width: 512
+        height: 256
+      alignment: 9
+      pivot: {x: 0.53628236, y: 0.5145128}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +196,12 @@ TextureImporter:
       name: Thrud morreno_3
       rect:
         serializedVersion: 2
-        x: 672
-        y: 792
-        width: 328
-        height: 232
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 512
+        y: 768
+        width: 512
+        height: 256
+      alignment: 9
+      pivot: {x: 0.61247516, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,12 +217,12 @@ TextureImporter:
       name: Thrud morreno_4
       rect:
         serializedVersion: 2
-        x: 120
-        y: 576
-        width: 360
-        height: 176
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 512
+        width: 512
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8628235}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,12 +238,12 @@ TextureImporter:
       name: Thrud morreno_5
       rect:
         serializedVersion: 2
-        x: 584
-        y: 592
-        width: 280
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 512
+        y: 512
+        width: 512
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8555667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: Thrud morreno_6
       rect:
         serializedVersion: 2
-        x: 896
-        y: 672
-        width: 40
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 256
+        width: 512
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8555667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: Thrud morreno_7
       rect:
         serializedVersion: 2
-        x: 480
-        y: 640
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 512
+        y: 256
+        width: 512
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8555667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: Thrud morreno_8
       rect:
         serializedVersion: 2
-        x: 872
-        y: 608
-        width: 88
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 512
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8555667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,90 +314,6 @@ TextureImporter:
       bones: []
       spriteID: 29c8b59318e71d550800000000000000
       internalID: 6183862856834583698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thrud morreno_9
-      rect:
-        serializedVersion: 2
-        x: 968
-        y: 632
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1fd20de50ec23db0800000000000000
-      internalID: -4813558526859092195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thrud morreno_10
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 320
-        width: 272
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 664e5743514744b70800000000000000
-      internalID: 8882351999504737382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thrud morreno_11
-      rect:
-        serializedVersion: 2
-        x: 616
-        y: 320
-        width: 272
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf78b8415b8be8140800000000000000
-      internalID: 4723916147031508987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thrud morreno_12
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 64
-        width: 272
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0412ebf921af4890800000000000000
-      internalID: -7471576055092734962
       vertices: []
       indices: 
       edges: []

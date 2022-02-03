@@ -10,7 +10,7 @@ public class EnemyPatrol : MonoBehaviour
     
     private Rigidbody2D _enemyRigidbody2D;
     
-    private bool _faceFlip;
+    private bool _faceFlip = true;
 
     private Animator _enemyPatrolAnimator;
     
@@ -40,13 +40,13 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other != null && !other.collider.CompareTag("Player") && !other.collider.CompareTag("Ground"))
+        if (other != null && other.CompareTag("ColliderFlip"))
         {
             _faceFlip = !_faceFlip;
         }
-        else if(other != null &&  other.collider.CompareTag("Player"))
+        else if(other != null &&  other.CompareTag("Player"))
         {
             _enemyPatrolAnimator.SetBool("CollisionPlayer", true);
         }
