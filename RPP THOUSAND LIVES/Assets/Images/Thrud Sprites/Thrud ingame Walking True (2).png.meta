@@ -118,10 +118,10 @@ TextureImporter:
       name: Thrud ingame Walking True (2)_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 726
-        width: 308
-        height: 319
+        x: 0
+        y: 704
+        width: 363
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,9 +140,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 363
-        y: 726
-        width: 330
-        height: 308
+        y: 704
+        width: 363
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: Thrud ingame Walking True (2)_2
       rect:
         serializedVersion: 2
-        x: 759
-        y: 726
-        width: 308
-        height: 319
+        x: 726
+        y: 704
+        width: 363
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: Thrud ingame Walking True (2)_3
       rect:
         serializedVersion: 2
-        x: 44
-        y: 374
-        width: 308
-        height: 330
+        x: 0
+        y: 352
+        width: 363
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: Thrud ingame Walking True (2)_4
       rect:
         serializedVersion: 2
-        x: 385
-        y: 374
-        width: 341
-        height: 308
+        x: 363
+        y: 352
+        width: 363
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,9 +224,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 726
-        y: 374
+        y: 352
         width: 363
-        height: 308
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: Thrud ingame Walking True (2)_6
       rect:
         serializedVersion: 2
-        x: 33
-        y: 22
-        width: 308
-        height: 319
+        x: 0
+        y: 0
+        width: 363
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: Thrud ingame Walking True (2)_7
       rect:
         serializedVersion: 2
-        x: 407
-        y: 22
-        width: 308
-        height: 330
+        x: 363
+        y: 0
+        width: 363
+        height: 352
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

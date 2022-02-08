@@ -47,6 +47,11 @@ public class PlayerController : MonoBehaviour
 
     private bool _isDead;
 
+    private bool kPressed;
+    
+    [SerializeField]
+    public Collider2D _attackArea;
+
     private void OnEnable()
     {
         playerInput.onActionTriggered += PlayerInputOnActionTriggered;
@@ -93,7 +98,15 @@ public class PlayerController : MonoBehaviour
             if(!_isMovingRight && _movimento.x < 0 ) Flip();
             Jump();
         }
-       
+
+        /*if (Keyboard.current.kKey.wasPressedThisFrame)
+        {
+            _attackArea.enabled = true;
+        }*/
+        if (Keyboard.current.kKey.wasPressedThisFrame)
+        {
+            GetComponentInChildren<IWeapon>(true).Attack();
+        }
        
     }
 
@@ -102,6 +115,7 @@ public class PlayerController : MonoBehaviour
         _playerAnimator.SetFloat("Speed", Mathf.Abs(_movimento.x));
         _playerAnimator.SetBool("isGrounded", _isGrounded);
         _playerAnimator.SetFloat("VertSpeed", _rigidbody2D.velocity.y);
+        _playerAnimator.SetBool("IsAttacking", kPressed);
     }
 
     private void CheckGround()
@@ -148,7 +162,7 @@ public class PlayerController : MonoBehaviour
         {
             _movimento = obj.ReadValue<Vector2>();
             _movimento.y = 0;
-            Debug.Log(message: _movimento.ToString());
+            
         }
         if (string.Compare(strA: obj.action.name, strB: _gameInput.Gameplay.Jump.name, StringComparison.Ordinal) == 0)
         {
@@ -227,6 +241,8 @@ public class PlayerController : MonoBehaviour
         _playerAnimator.SetBool("Active", _isActive);
         // animação de vitoria
     }
+    
+    
 
     private void OnDrawGizmos()
     {

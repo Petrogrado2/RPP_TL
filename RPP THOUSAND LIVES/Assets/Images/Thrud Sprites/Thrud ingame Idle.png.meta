@@ -113,11 +113,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 737
-        width: 330
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 704
+        width: 352
+        height: 352
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,11 +134,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 737
-        width: 330
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 704
+        width: 352
+        height: 352
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,12 +154,12 @@ TextureImporter:
       name: Thrud ingame Idle_2
       rect:
         serializedVersion: 2
-        x: 11
-        y: 385
-        width: 330
-        height: 308
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 352
+        width: 352
+        height: 352
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: Thrud ingame Idle_3
       rect:
         serializedVersion: 2
-        x: 363
-        y: 385
-        width: 330
-        height: 308
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 352
+        y: 352
+        width: 352
+        height: 352
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,11 +197,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 33
-        width: 341
-        height: 308
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 0
+        width: 352
+        height: 352
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,11 +218,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 33
-        width: 341
-        height: 308
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 0
+        width: 352
+        height: 352
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

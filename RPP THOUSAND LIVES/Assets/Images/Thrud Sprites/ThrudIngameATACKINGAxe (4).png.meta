@@ -121,12 +121,12 @@ TextureImporter:
       name: ThrudIngameATACKINGAxe (4)_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 848
-        width: 224
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 768
+        width: 512
+        height: 384
+      alignment: 9
+      pivot: {x: 0.18, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +142,12 @@ TextureImporter:
       name: ThrudIngameATACKINGAxe (4)_1
       rect:
         serializedVersion: 2
-        x: 520
-        y: 848
-        width: 240
-        height: 280
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 512
+        y: 768
+        width: 512
+        height: 384
+      alignment: 9
+      pivot: {x: 0.18, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: ThrudIngameATACKINGAxe (4)_2
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 848
-        width: 224
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1024
+        y: 768
+        width: 512
+        height: 384
+      alignment: 9
+      pivot: {x: 0.18, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: ThrudIngameATACKINGAxe (4)_3
       rect:
         serializedVersion: 2
-        x: 8
-        y: 464
-        width: 320
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 384
+        width: 512
+        height: 384
+      alignment: 9
+      pivot: {x: 0.18, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: ThrudIngameATACKINGAxe (4)_4
       rect:
         serializedVersion: 2
-        x: 536
-        y: 464
-        width: 328
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 512
+        y: 384
+        width: 512
+        height: 384
+      alignment: 9
+      pivot: {x: 0.18, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +226,12 @@ TextureImporter:
       name: ThrudIngameATACKINGAxe (4)_5
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 464
-        width: 312
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1024
+        y: 384
+        width: 512
+        height: 384
+      alignment: 9
+      pivot: {x: 0.18, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: ThrudIngameATACKINGAxe (4)_6
       rect:
         serializedVersion: 2
-        x: 24
-        y: 80
-        width: 296
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 512
+        height: 384
+      alignment: 9
+      pivot: {x: 0.18, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: ThrudIngameATACKINGAxe (4)_7
       rect:
         serializedVersion: 2
-        x: 520
-        y: 80
-        width: 288
-        height: 224
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 510
+        y: 2
+        width: 512
+        height: 384
+      alignment: 9
+      pivot: {x: 0.18, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: ThrudIngameATACKINGAxe (4)_8
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 80
-        width: 224
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1024
+        y: 0
+        width: 512
+        height: 384
+      alignment: 9
+      pivot: {x: 0.18, y: 0.62}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

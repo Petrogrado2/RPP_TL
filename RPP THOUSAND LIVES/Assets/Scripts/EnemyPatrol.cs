@@ -46,12 +46,27 @@ public class EnemyPatrol : MonoBehaviour
         {
             _faceFlip = !_faceFlip;
         }
-        else if(other != null &&  other.CompareTag("Player"))
+
+       /* if (other != null && other.CompareTag("MeleeAttack"))
         {
-            _enemyPatrolAnimator.SetBool("CollisionPlayer", true);
+            KillEnemy();
         }
+       */
         FlipEnemy();
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+         if(other != null &&  other.collider.CompareTag("Player"))
+        {
+            _enemyPatrolAnimator.SetBool("CollisionPlayer", true);
+            Debug.Log("bateu no player");
+        }
+    }
+
+    private void KillEnemy()
+    {
+        _enemyRigidbody2D.bodyType = RigidbodyType2D.Static;
+        Destroy(gameObject);
+    }
 }
