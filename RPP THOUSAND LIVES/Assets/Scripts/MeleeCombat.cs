@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeleeCombat : MonoBehaviour, IWeapon
+public class MeleeCombat : TriggerDamage, IWeapon
 {
     [SerializeField]
     private float attackTime = 0.2f;

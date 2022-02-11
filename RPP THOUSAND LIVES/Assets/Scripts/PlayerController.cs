@@ -7,6 +7,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private GameObject weaponObject;
+     public IWeapon weapon;
+
+    private PlayerController _playerController;
+    
     public float velocidade;
 
     public float maxSpeed;
@@ -49,6 +54,7 @@ public class PlayerController : MonoBehaviour
 
     private bool kPressed;
     
+    
     [SerializeField]
     public Collider2D _attackArea;
 
@@ -70,6 +76,11 @@ public class PlayerController : MonoBehaviour
         _playerAnimator = GetComponent<Animator>();
         _gameInput = new GameInput();
         _isActive = true;
+        _playerController = GetComponent<PlayerController>();
+        if (weaponObject != null)
+        {
+            weapon = weaponObject.GetComponent<IWeapon>();
+        }
 
     }
 
@@ -105,7 +116,7 @@ public class PlayerController : MonoBehaviour
         }*/
         if (Keyboard.current.kKey.wasPressedThisFrame)
         {
-            GetComponentInChildren<IWeapon>(true).Attack();
+            weapon.Attack();
         }
        
     }
@@ -115,7 +126,7 @@ public class PlayerController : MonoBehaviour
         _playerAnimator.SetFloat("Speed", Mathf.Abs(_movimento.x));
         _playerAnimator.SetBool("isGrounded", _isGrounded);
         _playerAnimator.SetFloat("VertSpeed", _rigidbody2D.velocity.y);
-        _playerAnimator.SetBool("IsAttacking", kPressed);
+        _playerAnimator.SetBool("IsAttacking", _playerController.weapon.IsAttacking);
     }
 
     private void CheckGround()

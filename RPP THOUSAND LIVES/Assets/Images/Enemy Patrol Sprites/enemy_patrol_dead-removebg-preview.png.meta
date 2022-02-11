@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: d8cd223c336668a47976c291c5d4ff4e
+guid: df907b05ed7bcdd48abfab231c243d27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8678404935307232193
-    second: Thrud ingame Idle_0
+      213: -3661385681156244861
+    second: enemy_patrol_dead-removebg-preview_0
   - first:
-      213: -4862266544340813222
-    second: Thrud ingame Idle_1
+      213: 5587616599819410678
+    second: enemy_patrol_dead-removebg-preview_1
   - first:
-      213: -5898145184754206817
-    second: Thrud ingame Idle_2
+      213: 1624716967861561527
+    second: enemy_patrol_dead-removebg-preview_2
   - first:
-      213: -4559907908028543864
-    second: Thrud ingame Idle_3
+      213: 7207946804305416819
+    second: enemy_patrol_dead-removebg-preview_3
   - first:
-      213: 624016125512967022
-    second: Thrud ingame Idle_4
+      213: 2156961082087951591
+    second: enemy_patrol_dead-removebg-preview_4
   - first:
-      213: -5446061232364564542
-    second: Thrud ingame Idle_5
+      213: 1874549839298027986
+    second: enemy_patrol_dead-removebg-preview_5
+  - first:
+      213: -2952724172146506371
+    second: enemy_patrol_dead-removebg-preview_6
+  - first:
+      213: 8994440206297911366
+    second: enemy_patrol_dead-removebg-preview_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Thrud ingame Idle_0
+      name: enemy_patrol_dead-removebg-preview_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 737
-        width: 330
-        height: 319
+        y: 375
+        width: 166.66667
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3cf30601bc109780800000000000000
-      internalID: -8678404935307232193
+      spriteID: 38afaf03f15203dc0800000000000000
+      internalID: -3661385681156244861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thrud ingame Idle_1
+      name: enemy_patrol_dead-removebg-preview_1
       rect:
         serializedVersion: 2
-        x: 352
-        y: 737
-        width: 330
-        height: 319
+        x: 166
+        y: 375
+        width: 166.66667
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5abc4dd652c58cb0800000000000000
-      internalID: -4862266544340813222
+      spriteID: 6fcdf4d61b33b8d40800000000000000
+      internalID: 5587616599819410678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thrud ingame Idle_2
+      name: enemy_patrol_dead-removebg-preview_2
       rect:
         serializedVersion: 2
-        x: 11
-        y: 385
-        width: 330
-        height: 308
+        x: 332
+        y: 375
+        width: 166.66667
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,41 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f977b054434952ea0800000000000000
-      internalID: -5898145184754206817
+      spriteID: 7b820f169772c8610800000000000000
+      internalID: 1624716967861561527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thrud ingame Idle_3
-      rect:
-        serializedVersion: 2
-        x: 363
-        y: 385
-        width: 330
-        height: 308
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88cc675cae3f7b0c0800000000000000
-      internalID: -4559907908028543864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Thrud ingame Idle_4
+      name: enemy_patrol_dead-removebg-preview_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 33
-        width: 341
-        height: 308
+        y: 250
+        width: 166.66667
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e63e0572c53f8a800800000000000000
-      internalID: 624016125512967022
+      spriteID: 372598edd65c70460800000000000000
+      internalID: 7207946804305416819
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Thrud ingame Idle_5
+      name: enemy_patrol_dead-removebg-preview_4
       rect:
         serializedVersion: 2
-        x: 352
-        y: 33
-        width: 341
-        height: 308
+        x: 166
+        y: 250
+        width: 166.66667
+        height: 125
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +213,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf42e3e924bb64b0800000000000000
-      internalID: -5446061232364564542
+      spriteID: 7ecc1341da01fed10800000000000000
+      internalID: 2156961082087951591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_patrol_dead-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 250
+        width: 166.66667
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1ef15a52db30a10800000000000000
+      internalID: 1874549839298027986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_patrol_dead-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 125
+        width: 166.66667
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d758f777201d507d0800000000000000
+      internalID: -2952724172146506371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_patrol_dead-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 166.66667
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640d0e986bba2dc70800000000000000
+      internalID: 8994440206297911366
       vertices: []
       indices: 
       edges: []

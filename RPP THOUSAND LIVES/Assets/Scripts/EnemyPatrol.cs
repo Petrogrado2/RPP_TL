@@ -13,13 +13,15 @@ public class EnemyPatrol : MonoBehaviour
     private bool _faceFlip = true;
 
     private Animator _enemyPatrolAnimator;
-    
+
+    private IDamageable _damageable;
 
     // Start is called before the first frame update
     void Start()
     {
         _enemyRigidbody2D = GetComponent<Rigidbody2D>();
         _enemyPatrolAnimator = GetComponent<Animator>();
+        _damageable = GetComponent<IDamageable>();
     }
 
     // Update is called once per frame
@@ -47,11 +49,11 @@ public class EnemyPatrol : MonoBehaviour
             _faceFlip = !_faceFlip;
         }
 
-       /* if (other != null && other.CompareTag("MeleeAttack"))
+        if (other != null && other.CompareTag("MeleeAttack"))
         {
             KillEnemy();
         }
-       */
+       
         FlipEnemy();
     }
 
@@ -67,6 +69,12 @@ public class EnemyPatrol : MonoBehaviour
     private void KillEnemy()
     {
         _enemyRigidbody2D.bodyType = RigidbodyType2D.Static;
+        _enemyPatrolAnimator.SetTrigger("Dead");
+        Invoke("DestroyEnemy", 0.5f);
+    }
+
+    private void DestroyEnemy()
+    {
         Destroy(gameObject);
     }
 }
