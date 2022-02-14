@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,10 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private GameObject weaponObject;
      public IWeapon weapon;
+
+     [SerializeField] private CinemachineVirtualCamera bossFightCamera;
+     
+     [SerializeField] private CinemachineVirtualCamera playerCamera;
 
     private PlayerController _playerController;
     
@@ -51,8 +56,7 @@ public class PlayerController : MonoBehaviour
     private bool _isActive;
 
     private bool _isDead;
-
-    private bool kPressed;
+    
     
     
     [SerializeField]
@@ -61,11 +65,16 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         playerInput.onActionTriggered += PlayerInputOnActionTriggered;
+        CameraSwitcher.Register(playerCamera);
+        CameraSwitcher.Register(bossFightCamera);
+        CameraSwitcher.SwitchCamera(playerCamera);
     }
 
     private void OnDisable()
     {
         playerInput.onActionTriggered -= PlayerInputOnActionTriggered;
+        CameraSwitcher.Unregister(bossFightCamera);
+        CameraSwitcher.Unregister(playerCamera);
     }
 
    
@@ -110,14 +119,13 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-        /*if (Keyboard.current.kKey.wasPressedThisFrame)
-        {
-            _attackArea.enabled = true;
-        }*/
+        
         if (Keyboard.current.kKey.wasPressedThisFrame)
         {
             weapon.Attack();
         }
+
+       
        
     }
 
@@ -234,6 +242,17 @@ public class PlayerController : MonoBehaviour
         {
             OnVictory();
         }
+        else if (other.gameObject.CompareTag("BossFightTrigger"))
+        {
+            if (CameraSwitcher.IsActiveCamera(bossFightCamera))
+            {
+                CameraSwitcher.SwitchCamera(playerCamera);
+            }
+            else if (CameraSwitcher.IsActiveCamera(playerCamera))
+            {
+                CameraSwitcher.SwitchCamera(bossFightCamera);
+            }
+        }
     }
 
     private void KillPlayer()
@@ -252,8 +271,9 @@ public class PlayerController : MonoBehaviour
         _playerAnimator.SetBool("Active", _isActive);
         // animação de vitoria
     }
+
     
-    
+
 
     private void OnDrawGizmos()
     {
