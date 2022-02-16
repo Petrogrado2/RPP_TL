@@ -56,8 +56,8 @@ public class PlayerController : MonoBehaviour
     private bool _isActive;
 
     private bool _isDead;
-    
-    
+
+   
     
     [SerializeField]
     public Collider2D _attackArea;
@@ -253,6 +253,8 @@ public class PlayerController : MonoBehaviour
                 CameraSwitcher.SwitchCamera(bossFightCamera);
             }
         }
+       
+        
     }
 
     private void KillPlayer()
@@ -271,7 +273,6 @@ public class PlayerController : MonoBehaviour
         _playerAnimator.SetBool("Active", _isActive);
         // animação de vitoria
     }
-
     
 
 

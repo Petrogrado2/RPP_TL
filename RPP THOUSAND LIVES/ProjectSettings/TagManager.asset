@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - ColliderFlip
   - MeleeAttack
+  - BossFightTrigger
   layers:
   - Default
   - TransparentFX
