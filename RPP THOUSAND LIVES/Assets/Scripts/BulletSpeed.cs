@@ -14,12 +14,30 @@ public class BulletSpeed : MonoBehaviour
         rigidBody.velocity = transform.right * -1 *_speed;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    /*private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other != null && other.CompareTag("Player"))
+        {
+            KillPlayer();
+        }
+
         if (other.gameObject.tag.Equals("Kill") || other.gameObject.tag.Equals("Player"))
         {
             return;
         }
         Destroy(gameObject);
+    }*/
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other != null && other.collider.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void KillPlayer()
+    {
+        
     }
 }

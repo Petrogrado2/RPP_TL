@@ -20,6 +20,10 @@ public class BulletEnemy : MonoBehaviour
     public float rayLength = 0.5f;
 
     public bool isOnSight = false;
+
+    public float timeToWait = 1f;
+
+    private float shootTime;
     
     
     void Start()
@@ -41,9 +45,10 @@ public class BulletEnemy : MonoBehaviour
             isOnSight = false;
         }
 
-        if (isOnSight)
+        if (isOnSight && Time.time - shootTime > timeToWait)
         {
             Shoot();
+            shootTime = Time.time;
         }
         // detectar se o jogador entrou na area de tiro
         
@@ -51,8 +56,13 @@ public class BulletEnemy : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(_bulletPrefab, _shootPosition.position, _shootPosition.rotation); 
+        Instantiate(_bulletPrefab, _shootPosition.position, _shootPosition.rotation);
+        
     }
+
+   
+
+   
    
     // Start is called before the first frame update
   
@@ -80,6 +90,6 @@ public class BulletEnemy : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(enemySight.position,new Vector2(enemySight.position.x, enemySight.position.y - rayLength));
+        Gizmos.DrawLine(enemySight.position,enemySight.position + Vector3.left * rayLength);
     }
 }
