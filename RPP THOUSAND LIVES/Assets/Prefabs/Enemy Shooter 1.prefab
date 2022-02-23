@@ -189,12 +189,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shootPosition: {fileID: 6144915768582097238}
-  _bulletPrefab: {fileID: 696601893851763346, guid: 339fe94cbca917d4e9329ee8a8d0da27, type: 3}
+  _bulletPrefab: {fileID: 9135579022108709680, guid: bec231693cba8104ca066f185dbf36d1, type: 3}
   enemySight: {fileID: 6144915768582097238}
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  rayLength: 8.12
+  rayLength: 17.02
   isOnSight: 0
   timeToWait: 1
 --- !u!50 &1049880486

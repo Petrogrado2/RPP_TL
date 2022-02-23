@@ -10,6 +10,7 @@ TagManager:
   - ColliderFlip
   - MeleeAttack
   - BossFightTrigger
+  - Spear
   layers:
   - Default
   - TransparentFX

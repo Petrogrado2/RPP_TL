@@ -58,6 +58,8 @@ public class PlayerController : MonoBehaviour
     private bool _isDead;
 
    
+
+   
     
     [SerializeField]
     public Collider2D _attackArea;
@@ -124,6 +126,7 @@ public class PlayerController : MonoBehaviour
         {
             weapon.Attack();
         }
+
 
        
        
@@ -256,6 +259,7 @@ public class PlayerController : MonoBehaviour
        
         
     }
+
 
     private void KillPlayer()
     {
