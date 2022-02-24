@@ -7,28 +7,48 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class ThrowSpear : MonoBehaviour
 {
-    private Transform playerPosition;
+    public Transform playerPosition;
     public float velocidadeDeVolta;
     
     
     
     [SerializeField]
     private float _velocidade;
+
+    private Rigidbody2D rigidBody;
+
+    private Collider2D _collider2D;
+    // criar variavel para guardar o collider
     
     // Start is called before the first frame update
     void Start()
     {
-        playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
-        var rigidBody = GetComponent<Rigidbody2D>();
-        rigidBody.velocity = transform.right * _velocidade;
+        _collider2D = GetComponent<Collider2D>();
+        rigidBody = GetComponent<Rigidbody2D>();
+        rigidBody.velocity = -transform.right * _velocidade;
     }
+    
 
-    private void Update()
+    private void FixedUpdate()
     {
+        
+        
         if (playerPosition.gameObject != null && Keyboard.current.iKey.isPressed)
         {
-            transform.position = Vector2.MoveTowards(transform.position, playerPosition.position,
-                velocidadeDeVolta * Time.deltaTime);
+            _collider2D.isTrigger = true;
+            rigidBody.velocity = (playerPosition.position - transform.position).normalized * velocidadeDeVolta;
+            
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other != null && other.CompareTag("Player"))
+        {
+            Debug.Log("entrei");
+            Destroy(gameObject);
+        }
+    }
+    
+    
 }

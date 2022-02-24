@@ -77,6 +77,14 @@ public class BulletEnemy : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other != null && other.collider.CompareTag("Spear"))
+        {
+            KillEnemy();
+        }
+    }
+
     private void DestroyBody()
     {
         Destroy(gameObject);

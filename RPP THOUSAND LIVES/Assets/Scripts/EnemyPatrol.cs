@@ -56,6 +56,7 @@ public class EnemyPatrol : MonoBehaviour
        
         FlipEnemy();
     }
+   
 
     private void OnCollisionEnter2D(Collision2D other)
     {
@@ -64,6 +65,10 @@ public class EnemyPatrol : MonoBehaviour
             _enemyPatrolAnimator.SetBool("CollisionPlayer", true);
             Debug.Log("bateu no player");
         }
+         if (other != null && other.collider.CompareTag("Spear"))
+         {
+             KillEnemy();
+         }
     }
 
     private void KillEnemy()

@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool IsMovingRight => _isMovingRight;
     [SerializeField] private GameObject weaponObject;
      public IWeapon weapon;
 

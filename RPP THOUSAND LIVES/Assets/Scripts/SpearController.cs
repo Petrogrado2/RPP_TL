@@ -15,6 +15,8 @@ public class SpearController : MonoBehaviour
     [SerializeField] private Transform _ThrowPosition;
 
     [SerializeField] private GameObject _spearPrefab;
+
+    public PlayerController playerController;
   
 
     // Update is called once per frame
@@ -40,9 +42,9 @@ public class SpearController : MonoBehaviour
         }
     }*/
    
-   private void OnCollisionEnter2D(Collision2D other)
+   private void OnTriggerEnter2D(Collider2D other)
    {
-       if (other != null && other.collider.CompareTag("Spear"))
+       if (other != null && other.CompareTag("Spear"))
        {
            _isWithSpear = true;
            //lança some
@@ -52,7 +54,14 @@ public class SpearController : MonoBehaviour
 
     private void ThrowSpear()
     {
-        Instantiate(_spearPrefab, _ThrowPosition.position, _ThrowPosition.rotation);
+       GameObject spearObject =  Instantiate(_spearPrefab, _ThrowPosition.position, _ThrowPosition.rotation);
+
+       if (!playerController.IsMovingRight)
+       {
+           spearObject.transform.rotation = Quaternion.Euler(0, 180,0) * spearObject.transform.rotation;
+       }
+       
+       spearObject.GetComponent<ThrowSpear>().playerPosition = transform;
     }
 
    /* private void ComeBack()
