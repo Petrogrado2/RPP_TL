@@ -58,6 +58,10 @@ public class PlayerController : MonoBehaviour
 
     private bool _isDead;
 
+    public bool IsWithSpear2;
+
+    public GameObject Spear;
+
    
 
    
@@ -84,6 +88,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _playerAnimator = GetComponent<Animator>();
         _gameInput = new GameInput();
@@ -103,6 +108,9 @@ public class PlayerController : MonoBehaviour
             CheckGround();
             AnimationUpdaates();
         }
+        IsWithSpear2 = GetComponent<SpearController>()._isWithSpear;
+
+       
     }
 
     // Update is called once per frame
@@ -139,6 +147,7 @@ public class PlayerController : MonoBehaviour
         _playerAnimator.SetBool("isGrounded", _isGrounded);
         _playerAnimator.SetFloat("VertSpeed", _rigidbody2D.velocity.y);
         _playerAnimator.SetBool("IsAttacking", _playerController.weapon.IsAttacking);
+        _playerAnimator.SetBool("IsWithSpear", IsWithSpear2);
     }
 
     private void CheckGround()

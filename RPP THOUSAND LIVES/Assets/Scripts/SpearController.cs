@@ -6,11 +6,7 @@ using UnityEngine.InputSystem;
 
 public class SpearController : MonoBehaviour
 {
-    //public GameObject Spear;
-   // public Transform thrudHand;
-   // public float velocidade;
-
-    private bool _isWithSpear = true;
+    public bool _isWithSpear = true;
 
     [SerializeField] private Transform _ThrowPosition;
 
@@ -27,28 +23,15 @@ public class SpearController : MonoBehaviour
             ThrowSpear();
             _isWithSpear = false;
         }
-        
-      /*  if (Keyboard.current.iKey.isPressed)
-        {
-            ComeBack();
-        }*/
     }
 
-   /* private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other != null && other.collider.CompareTag("Player"))
-        {
-            Spear.SetActive(false);
-        }
-    }*/
+  
    
    private void OnTriggerEnter2D(Collider2D other)
    {
        if (other != null && other.CompareTag("Spear"))
        {
            _isWithSpear = true;
-           //lança some
-
        }
    }
 
@@ -63,10 +46,4 @@ public class SpearController : MonoBehaviour
        
        spearObject.GetComponent<ThrowSpear>().playerPosition = transform;
     }
-
-   /* private void ComeBack()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, thrudHand.position, velocidade * Time.deltaTime);
-    }*/
-    
 }
