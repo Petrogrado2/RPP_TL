@@ -13,6 +13,10 @@ public class SpearController : MonoBehaviour
     [SerializeField] private GameObject _spearPrefab;
 
     public PlayerController playerController;
+
+    public bool IsThrowingSpear;
+
+    [SerializeField]private float AttackTime = 0.2f;
   
 
     // Update is called once per frame
@@ -20,7 +24,9 @@ public class SpearController : MonoBehaviour
     {
         if (Keyboard.current.lKey.wasPressedThisFrame && _isWithSpear)
         {
-            ThrowSpear();
+            IsThrowingSpear = true;
+            
+            Invoke("ThrowSpear", 0.4f);
             _isWithSpear = false;
         }
     }
@@ -45,5 +51,11 @@ public class SpearController : MonoBehaviour
        }
        
        spearObject.GetComponent<ThrowSpear>().playerPosition = transform;
+       StartCoroutine(PerformAttack());
+    }
+    private IEnumerator PerformAttack()
+    {
+        yield return new WaitForSeconds(AttackTime);
+        IsThrowingSpear = false;
     }
 }

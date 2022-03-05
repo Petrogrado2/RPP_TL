@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
     public bool IsWithSpear2;
 
-    public GameObject Spear;
+    public bool IsThrowingSpear2;
 
    
 
@@ -109,8 +109,9 @@ public class PlayerController : MonoBehaviour
             AnimationUpdaates();
         }
         IsWithSpear2 = GetComponent<SpearController>()._isWithSpear;
+        IsThrowingSpear2 = GetComponent<SpearController>().IsThrowingSpear;
 
-       
+
     }
 
     // Update is called once per frame
@@ -148,6 +149,7 @@ public class PlayerController : MonoBehaviour
         _playerAnimator.SetFloat("VertSpeed", _rigidbody2D.velocity.y);
         _playerAnimator.SetBool("IsAttacking", _playerController.weapon.IsAttacking);
         _playerAnimator.SetBool("IsWithSpear", IsWithSpear2);
+        _playerAnimator.SetBool("IsThrowingSpear", IsThrowingSpear2);
     }
 
     private void CheckGround()
@@ -265,6 +267,10 @@ public class PlayerController : MonoBehaviour
             {
                 CameraSwitcher.SwitchCamera(bossFightCamera);
             }
+        }
+        else if (other.gameObject.CompareTag("Kill"))
+        {
+            KillPlayer();
         }
        
         
