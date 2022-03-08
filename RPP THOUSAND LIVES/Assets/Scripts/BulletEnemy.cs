@@ -24,6 +24,8 @@ public class BulletEnemy : MonoBehaviour
     public float timeToWait = 1f;
 
     private float shootTime;
+
+    public AudioSource audioTiro;
     
     
     void Start()
@@ -56,6 +58,7 @@ public class BulletEnemy : MonoBehaviour
 
     private void Shoot()
     {
+        audioTiro.Play();
         Instantiate(_bulletPrefab, _shootPosition.position, _shootPosition.rotation);
         
     }

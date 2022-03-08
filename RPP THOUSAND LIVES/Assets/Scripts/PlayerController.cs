@@ -62,6 +62,12 @@ public class PlayerController : MonoBehaviour
 
     public bool IsThrowingSpear2;
 
+    private BoxCollider2D _playerCollider, _bossGroundCollider;
+
+    public AudioSource audioMorte;
+
+    public AudioSource audioMeleeAttack;
+
    
 
    
@@ -99,6 +105,10 @@ public class PlayerController : MonoBehaviour
             weapon = weaponObject.GetComponent<IWeapon>();
         }
 
+        _playerCollider = GetComponent<BoxCollider2D>();
+        _bossGroundCollider = GameObject.Find("Boss ground (1)").GetComponent<BoxCollider2D>();
+        Physics2D.IgnoreCollision(_playerCollider, _bossGroundCollider, true);
+
     }
 
     private void Update()
@@ -134,6 +144,7 @@ public class PlayerController : MonoBehaviour
         
         if (Keyboard.current.kKey.wasPressedThisFrame)
         {
+            audioMeleeAttack.Play();
             weapon.Attack();
         }
 
@@ -279,6 +290,7 @@ public class PlayerController : MonoBehaviour
 
     private void KillPlayer()
     {
+        audioMorte.Play();
         _isDead = true;
         _isActive = false;
         _rigidbody2D.bodyType = RigidbodyType2D.Static;

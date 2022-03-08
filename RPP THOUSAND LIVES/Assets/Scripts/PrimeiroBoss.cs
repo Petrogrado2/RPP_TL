@@ -50,7 +50,10 @@ public class PrimeiroBoss : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+        if (bossLife <= 0)
+        {
+            Destroy(gameObject);
+        }
         
             //StartCoroutine(DoubleAttack());
         
@@ -71,7 +74,6 @@ public class PrimeiroBoss : MonoBehaviour
                 break;
             case 4:
                 StopBoss();
-                _bossState = 1;
                 break;
         }
                 
@@ -115,6 +117,8 @@ public class PrimeiroBoss : MonoBehaviour
         else if (other != null && other.CompareTag("StopCollider"))
         {
             _bossState = 4;
+            
+            Invoke("BackStageOne", 3f);
            
             Debug.Log("Para boss");
         }
@@ -150,12 +154,15 @@ public class PrimeiroBoss : MonoBehaviour
     {
         _rigidbody2D.velocity = new Vector2(0,0);
     }
-    
-    
 
-    private IEnumerator DoubleAttack()
+    private void BackStageOne()
     {
-        yield return new WaitForSeconds(3);
+        _bossState = 1;
+    }
+
+    private void DoubleAttack()
+    {
+        
         _rigidbody2D.AddForce(new Vector2(-velocidade,0), ForceMode2D.Impulse);
        
        // 

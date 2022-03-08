@@ -17,6 +17,8 @@ public class SpearController : MonoBehaviour
     public bool IsThrowingSpear;
 
     [SerializeField]private float AttackTime = 0.2f;
+
+    public AudioSource audioAtirandoLanca;
   
 
     // Update is called once per frame
@@ -24,6 +26,7 @@ public class SpearController : MonoBehaviour
     {
         if (Keyboard.current.lKey.wasPressedThisFrame && _isWithSpear)
         {
+            audioAtirandoLanca.Play();
             IsThrowingSpear = true;
             
             Invoke("ThrowSpear", 0.4f);
