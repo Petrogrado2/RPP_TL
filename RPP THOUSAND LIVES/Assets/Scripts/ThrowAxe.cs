@@ -13,6 +13,8 @@ public class ThrowAxe : MonoBehaviour
     public float velocidadeDeVolta;
 
     private Rigidbody2D rigidBody;
+
+   
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,8 @@ public class ThrowAxe : MonoBehaviour
     private void FixedUpdate()
     {
        Invoke("Back", 1f);
+
+       
     }
 
     private void Back()

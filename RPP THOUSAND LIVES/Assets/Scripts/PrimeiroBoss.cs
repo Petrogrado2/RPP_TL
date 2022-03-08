@@ -6,6 +6,14 @@ using UnityEngine.Tilemaps;
 
 public class PrimeiroBoss : MonoBehaviour
 {
+    //estado 1: atirar machado
+    //estado 2: corrida
+    //estado 3: voltar pro lugar
+    //estado 4: idle
+    //estado 5 ataque duplo
+
+    private bool _doubleAttack = true;
+    
     public float bossLife = 10;
 
     private Rigidbody2D _rigidbody2D;
@@ -23,6 +31,8 @@ public class PrimeiroBoss : MonoBehaviour
     [SerializeField] private GameObject _axePrefab;
 
     [SerializeField] private Transform _axePosition;
+
+    private int _bossState = 1;
     
     
     // Start is called before the first frame update
@@ -40,14 +50,36 @@ public class PrimeiroBoss : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        GoForward();
         
-       /* if (_isWitAxe)
+        
+            //StartCoroutine(DoubleAttack());
+        
+       
+        switch (_bossState)
         {
-            ThrowAxe();
-        }*/
-        
+            case 1:
+                if (_isWitAxe)
+                {
+                   StartCoroutine(ThrowAxe()); 
+                }
+                break; 
+            case 2:
+                StartCoroutine(GoForward());
+                break;
+            case 3:
+                StartCoroutine(BackPlace());
+                break;
+            case 4:
+                StopBoss();
+                _bossState = 1;
+                break;
+        }
+                
     }
+        
+      
+        
+    
     
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -69,31 +101,64 @@ public class PrimeiroBoss : MonoBehaviour
         else if (other != null && other.CompareTag("Kill"))
         {
             _isWitAxe = true;
+            
+            _bossState = 2;
+        }
+        
+        else if (other != null && other.CompareTag("ColliderFlip"))
+        {
+            
+            _bossState = 3;
+            
+        }
+        
+        else if (other != null && other.CompareTag("StopCollider"))
+        {
+            _bossState = 4;
+           
+            Debug.Log("Para boss");
         }
        
     }
 
-    private void GoForward()
+    private IEnumerator GoForward()
     {
-        _rigidbody2D.velocity = Vector2.left * velocidade * Time.deltaTime;
-        Invoke("BackPlace", 5f);
+        yield return new WaitForSeconds(3);
+       //_rigidbody2D.velocity = Vector2.left * velocidade * Time.deltaTime;
+        _rigidbody2D.velocity = new Vector2(-velocidade,0);
     }
 
-    private void BackPlace()
-    {
-        _rigidbody2D.velocity = Vector2.right * velocidade * Time.deltaTime;
-    }
-
-    private void ThrowAxe()
-    {
-      GameObject bossObject =  Instantiate(_axePrefab, _axePosition.position, _axePosition.rotation);
-        _isWitAxe = false;
-
-        bossObject.GetComponent<ThrowAxe>().bossPosition = transform;
-    }
-
-    private void DoubleAttack()
+    private IEnumerator BackPlace()
     {
         
+        yield return new WaitForSeconds(1);
+        
+        _rigidbody2D.velocity = new Vector2(velocidade,0);
+    }
+
+    private IEnumerator ThrowAxe()
+    {
+        
+      GameObject bossObject =  Instantiate(_axePrefab, _axePosition.position, _axePosition.rotation);
+        _isWitAxe = false;
+        yield return new WaitForSeconds(3);
+        bossObject.GetComponent<ThrowAxe>().bossPosition = transform;
+        
+    }
+
+    private void StopBoss()
+    {
+        _rigidbody2D.velocity = new Vector2(0,0);
+    }
+    
+    
+
+    private IEnumerator DoubleAttack()
+    {
+        yield return new WaitForSeconds(3);
+        _rigidbody2D.AddForce(new Vector2(-velocidade,0), ForceMode2D.Impulse);
+       
+       // 
+       // _rigidbody2D.bodyType = RigidbodyType2D.Static;
     }
 }

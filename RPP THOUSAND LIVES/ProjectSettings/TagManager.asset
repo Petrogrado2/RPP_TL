@@ -12,6 +12,7 @@ TagManager:
   - BossFightTrigger
   - Spear
   - Boss
+  - StopCollider
   layers:
   - Default
   - TransparentFX
