@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: fc53b090697a81f478a79ef12d55a3b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1133985042465445663
+    second: "D\xE1rius Lan\xE7ando machado_0"
+  - first:
+      213: 3576344491943425156
+    second: "D\xE1rius Lan\xE7ando machado_1"
+  - first:
+      213: 6869078625533984512
+    second: "D\xE1rius Lan\xE7ando machado_2"
+  - first:
+      213: 3236006648453932046
+    second: "D\xE1rius Lan\xE7ando machado_3"
+  - first:
+      213: 3493544226680577367
+    second: "D\xE1rius Lan\xE7ando machado_4"
+  - first:
+      213: -5220406012843354255
+    second: "D\xE1rius Lan\xE7ando machado_5"
+  - first:
+      213: 6383850495106818464
+    second: "D\xE1rius Lan\xE7ando machado_6"
+  - first:
+      213: -2120100731678421543
+    second: "D\xE1rius Lan\xE7ando machado_7"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 120
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "D\xE1rius Lan\xE7ando machado_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 2048
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.42, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1752c45369bcbf00800000000000000
+      internalID: 1133985042465445663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "D\xE1rius Lan\xE7ando machado_1"
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3840
+        width: 2048
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.4, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48476bcfd5ab1a130800000000000000
+      internalID: 3576344491943425156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "D\xE1rius Lan\xE7ando machado_2"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 2048
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.42, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f7e21bd9ed35f50800000000000000
+      internalID: 6869078625533984512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "D\xE1rius Lan\xE7ando machado_3"
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2560
+        width: 2048
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.42, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0426e3d6ea98ec20800000000000000
+      internalID: 3236006648453932046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "D\xE1rius Lan\xE7ando machado_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 2048
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.42, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d996ee6ff8b7030800000000000000
+      internalID: 3493544226680577367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "D\xE1rius Lan\xE7ando machado_5"
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1280
+        width: 2048
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.42, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1779825e3646d87b0800000000000000
+      internalID: -5220406012843354255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "D\xE1rius Lan\xE7ando machado_6"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2048
+        height: 1280
+      alignment: 9
+      pivot: {x: 0.42, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a12b04c33ef79850800000000000000
+      internalID: 6383850495106818464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "D\xE1rius Lan\xE7ando machado_7"
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 2048
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd03480e93e392e0800000000000000
+      internalID: -2120100731678421543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

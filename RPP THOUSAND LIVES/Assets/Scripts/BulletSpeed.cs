@@ -28,16 +28,13 @@ public class BulletSpeed : MonoBehaviour
         Destroy(gameObject);
     }*/
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other != null && other.collider.CompareTag("Player"))
+        if (other != null && other.CompareTag("Player"))
         {
             Destroy(gameObject);
         }
     }
 
-    private void KillPlayer()
-    {
-        
-    }
+   
 }

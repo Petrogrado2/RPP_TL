@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
     public bool IsThrowingSpear2;
 
-    private BoxCollider2D _playerCollider, _bossGroundCollider;
+    private BoxCollider2D _playerCollider, _bossGroundCollider, _colliderDoDoubleAttack;
 
     public AudioSource audioMorte;
 
@@ -107,7 +107,9 @@ public class PlayerController : MonoBehaviour
 
         _playerCollider = GetComponent<BoxCollider2D>();
         _bossGroundCollider = GameObject.Find("Boss ground (1)").GetComponent<BoxCollider2D>();
+        _colliderDoDoubleAttack = GameObject.Find("Colider do DoubleAttack").GetComponent<BoxCollider2D>();
         Physics2D.IgnoreCollision(_playerCollider, _bossGroundCollider, true);
+        Physics2D.IgnoreCollision(_playerCollider, _colliderDoDoubleAttack, true);
 
     }
 
@@ -257,6 +259,10 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Kill"))
+        {
+            KillPlayer();
+        }
+        else if (other.gameObject.CompareTag("Boss"))
         {
             KillPlayer();
         }

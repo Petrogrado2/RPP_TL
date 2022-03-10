@@ -16,12 +16,15 @@ public class EnemyPatrol : MonoBehaviour
 
     private IDamageable _damageable;
 
+    private Collider2D _patrolCollider2D;
+
     // Start is called before the first frame update
     void Start()
     {
         _enemyRigidbody2D = GetComponent<Rigidbody2D>();
         _enemyPatrolAnimator = GetComponent<Animator>();
         _damageable = GetComponent<IDamageable>();
+        _patrolCollider2D = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -73,6 +76,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void KillEnemy()
     {
+        _patrolCollider2D.isTrigger = true;
         _enemyRigidbody2D.bodyType = RigidbodyType2D.Static;
         _enemyPatrolAnimator.SetTrigger("Dead");
         Invoke("DestroyEnemy", 0.5f);

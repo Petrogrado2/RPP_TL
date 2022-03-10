@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 3b291c5ca93856a4fbbc191028e02e02
+guid: 433a1b49b34c405408cc0f7ce9beea65
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4241838200321369587
-    second: "D\xE1rius Attack1-sheet_0"
+      213: 3338283717786219445
+    second: "D\xE1rius Attack2-sheet_0"
   - first:
-      213: -5872885107887026559
-    second: "D\xE1rius Attack1-sheet_1"
+      213: -8848896149803972075
+    second: "D\xE1rius Attack2-sheet_1"
   - first:
-      213: 8413065883588983890
-    second: "D\xE1rius Attack1-sheet_2"
+      213: -1063953882532377540
+    second: "D\xE1rius Attack2-sheet_2"
   - first:
-      213: -774434425642512894
-    second: "D\xE1rius Attack1-sheet_3"
+      213: -5224495986871610728
+    second: "D\xE1rius Attack2-sheet_3"
   - first:
-      213: 578042049214377696
-    second: "D\xE1rius Attack1-sheet_4"
+      213: 7660771284599844016
+    second: "D\xE1rius Attack2-sheet_4"
   - first:
-      213: 12127679434709986
-    second: "D\xE1rius Attack1-sheet_5"
+      213: -9075611411481890242
+    second: "D\xE1rius Attack2-sheet_5"
   - first:
-      213: 4036292442018041981
-    second: "D\xE1rius Attack1-sheet_6"
+      213: 5500662742474260509
+    second: "D\xE1rius Attack2-sheet_6"
   - first:
-      213: 611842634600421246
-    second: "D\xE1rius Attack1-sheet_7"
+      213: 1593977243020007415
+    second: "D\xE1rius Attack2-sheet_7"
   - first:
-      213: -1479093963235521917
-    second: "D\xE1rius Attack1-sheet_8"
+      213: 5961779673060773919
+    second: "D\xE1rius Attack2-sheet_8"
   - first:
-      213: 3275423907845377986
-    second: "D\xE1rius Attack1-sheet_9"
+      213: -8992995447777156312
+    second: "D\xE1rius Attack2-sheet_9"
   - first:
-      213: -5771095040908480280
-    second: "D\xE1rius Attack1-sheet_10"
+      213: 1827086418437255583
+    second: "D\xE1rius Attack2-sheet_10"
   - first:
-      213: -8136628428306717480
-    second: "D\xE1rius Attack1-sheet_11"
+      213: -1715535093828702477
+    second: "D\xE1rius Attack2-sheet_11"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -82,7 +82,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,253 +127,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_0"
+      name: "D\xE1rius Attack2-sheet_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1024
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b33e16ba57f35e20800000000000000
+      internalID: 3338283717786219445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "D\xE1rius Attack2-sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3200
+        width: 1024
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51acc90d5d7623580800000000000000
+      internalID: -8848896149803972075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "D\xE1rius Attack2-sheet_2"
       rect:
         serializedVersion: 2
         x: 0
         y: 2560
         width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0a992b81a6f125c0800000000000000
-      internalID: -4241838200321369587
+      spriteID: c3c8246b4931c31f0800000000000000
+      internalID: -1063953882532377540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_1"
+      name: "D\xE1rius Attack2-sheet_3"
       rect:
         serializedVersion: 2
         x: 1024
         y: 2560
         width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18e46b93c125f7ea0800000000000000
-      internalID: -5872885107887026559
+      spriteID: 892501c949cde77b0800000000000000
+      internalID: -5224495986871610728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_2"
+      name: "D\xE1rius Attack2-sheet_4"
       rect:
         serializedVersion: 2
         x: 0
-        y: 2048
+        y: 1920
         width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25c7747c8d631c470800000000000000
-      internalID: 8413065883588983890
+      spriteID: 0bc261415e6805a60800000000000000
+      internalID: 7660771284599844016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_3"
+      name: "D\xE1rius Attack2-sheet_5"
       rect:
         serializedVersion: 2
         x: 1024
-        y: 2048
+        y: 1920
         width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20e8eb53ef7a045f0800000000000000
-      internalID: -774434425642512894
+      spriteID: e32f3238183fc0280800000000000000
+      internalID: -9075611411481890242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_4"
+      name: "D\xE1rius Attack2-sheet_6"
       rect:
         serializedVersion: 2
         x: 0
-        y: 1536
+        y: 1280
         width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ee69a06e2e950800800000000000000
-      internalID: 578042049214377696
+      spriteID: d10876ade97465c40800000000000000
+      internalID: 5500662742474260509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_5"
+      name: "D\xE1rius Attack2-sheet_7"
       rect:
         serializedVersion: 2
         x: 1024
-        y: 1536
+        y: 1280
         width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ebd7a86f061b2000800000000000000
-      internalID: 12127679434709986
+      spriteID: 7f793467bd1fe1610800000000000000
+      internalID: 1593977243020007415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_6"
+      name: "D\xE1rius Attack2-sheet_8"
       rect:
         serializedVersion: 2
         x: 0
-        y: 1024
+        y: 640
         width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d705410479ac30830800000000000000
-      internalID: 4036292442018041981
+      spriteID: f109ee9960f7cb250800000000000000
+      internalID: 5961779673060773919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_7"
+      name: "D\xE1rius Attack2-sheet_9"
       rect:
         serializedVersion: 2
         x: 1024
-        y: 1024
+        y: 640
         width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e771ccd62a3bd7800800000000000000
-      internalID: 611842634600421246
+      spriteID: 823a9848946723380800000000000000
+      internalID: -8992995447777156312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_8"
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38a0ce380e3397be0800000000000000
-      internalID: -1479093963235521917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_9"
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 512
-        width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cf02f3b0b4a47d20800000000000000
-      internalID: 3275423907845377986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_10"
+      name: "D\xE1rius Attack2-sheet_10"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1024
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 625
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e0b1a903a3f8efa0800000000000000
-      internalID: -5771095040908480280
+      spriteID: f91b4e0da6d1b5910800000000000000
+      internalID: 1827086418437255583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "D\xE1rius Attack1-sheet_11"
+      name: "D\xE1rius Attack2-sheet_11"
       rect:
         serializedVersion: 2
         x: 1024
         y: 0
         width: 1024
-        height: 512
+        height: 640
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d4ee6ddd83e41f80800000000000000
-      internalID: -8136628428306717480
+      spriteID: 3feaf94ebe13138e0800000000000000
+      internalID: -1715535093828702477
       vertices: []
       indices: 
       edges: []
