@@ -33,6 +33,8 @@ public class PrimeiroBoss : MonoBehaviour
 
     [SerializeField] private Transform _axePosition;
 
+    private bool _faceFlip = true;
+
     private int _bossState = 1;
 
     private Animator _bossAnimator;
@@ -114,9 +116,9 @@ public class PrimeiroBoss : MonoBehaviour
         
         else if (other != null && other.CompareTag("ColliderFlip"))
         {
-            
+            _faceFlip = !_faceFlip;
             _bossState = 3;
-            
+           // FlipEnemy();
         }
         
         else if (other != null && other.CompareTag("StopCollider"))
@@ -135,7 +137,8 @@ public class PrimeiroBoss : MonoBehaviour
         yield return new WaitForSeconds(3);
        
        _rigidbody2D.AddForce(new Vector2(-forca,0), ForceMode2D.Impulse);
-        
+       velocidade = 50;
+
     }
 
     private IEnumerator BackPlace()
@@ -144,6 +147,9 @@ public class PrimeiroBoss : MonoBehaviour
         yield return new WaitForSeconds(1);
         
         _rigidbody2D.velocity = new Vector2(velocidade,0);
+
+        yield return new WaitForSeconds(2);
+        velocidade = 0;
     }
 
     private IEnumerator ThrowAxe()
@@ -175,6 +181,18 @@ public class PrimeiroBoss : MonoBehaviour
 
     private void BossAnimations()
     {
+        _bossAnimator.SetFloat("Speed", Math.Abs(velocidade) );
         _bossAnimator.SetBool("IsThrowingAxe", _isWitAxe);
+    }
+    private void FlipEnemy()
+    {
+        if (_faceFlip)
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0,0, 0);
+        }
+        else
+        {
+            gameObject.transform.rotation = Quaternion.Euler(0,180, 0);
+        }
     }
 }

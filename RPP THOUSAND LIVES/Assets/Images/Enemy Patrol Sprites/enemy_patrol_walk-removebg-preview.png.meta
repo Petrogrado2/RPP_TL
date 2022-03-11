@@ -124,10 +124,10 @@ TextureImporter:
       name: enemy_patrol_walk-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 60
-        y: 494
-        width: 81
-        height: 96
+        x: 0
+        y: 459
+        width: 204
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +145,10 @@ TextureImporter:
       name: enemy_patrol_walk-removebg-preview_1
       rect:
         serializedVersion: 2
-        x: 264
-        y: 494
-        width: 81
-        height: 96
+        x: 204
+        y: 459
+        width: 204
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: enemy_patrol_walk-removebg-preview_2
       rect:
         serializedVersion: 2
-        x: 70
-        y: 341
-        width: 68
-        height: 100
+        x: 0
+        y: 306
+        width: 204
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: enemy_patrol_walk-removebg-preview_3
       rect:
         serializedVersion: 2
-        x: 274
-        y: 341
-        width: 67
-        height: 100
+        x: 204
+        y: 306
+        width: 204
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,10 +208,10 @@ TextureImporter:
       name: enemy_patrol_walk-removebg-preview_4
       rect:
         serializedVersion: 2
-        x: 54
-        y: 187
-        width: 90
-        height: 97
+        x: 0
+        y: 153
+        width: 204
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,10 +229,10 @@ TextureImporter:
       name: enemy_patrol_walk-removebg-preview_5
       rect:
         serializedVersion: 2
-        x: 149
-        y: 191
-        width: 4
-        height: 4
+        x: 204
+        y: 153
+        width: 204
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +250,10 @@ TextureImporter:
       name: enemy_patrol_walk-removebg-preview_6
       rect:
         serializedVersion: 2
-        x: 258
-        y: 187
-        width: 90
-        height: 97
+        x: 0
+        y: 0
+        width: 204
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +271,10 @@ TextureImporter:
       name: enemy_patrol_walk-removebg-preview_7
       rect:
         serializedVersion: 2
-        x: 357
-        y: 191
-        width: 7
-        height: 7
+        x: 204
+        y: 0
+        width: 204
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,48 +284,6 @@ TextureImporter:
       bones: []
       spriteID: c7af605bd927c1f10800000000000000
       internalID: 2241792736196229756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_patrol_walk-removebg-preview_8
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 35
-        width: 81
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e7439848f3b9e900800000000000000
-      internalID: 714299894865807331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy_patrol_walk-removebg-preview_9
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 35
-        width: 81
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50dc49271fed709f0800000000000000
-      internalID: -502187704837681915
       vertices: []
       indices: 
       edges: []

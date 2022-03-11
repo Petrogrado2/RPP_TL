@@ -63,6 +63,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        
          if(other != null &&  other.collider.CompareTag("Player"))
         {
             _enemyPatrolAnimator.SetBool("CollisionPlayer", true);
@@ -76,10 +77,11 @@ public class EnemyPatrol : MonoBehaviour
 
     private void KillEnemy()
     {
-        _patrolCollider2D.isTrigger = true;
+        _patrolCollider2D.enabled = false;
         _enemyRigidbody2D.bodyType = RigidbodyType2D.Static;
         _enemyPatrolAnimator.SetTrigger("Dead");
         Invoke("DestroyEnemy", 0.5f);
+        Debug.Log("Kkkkkkkk");
     }
 
     private void DestroyEnemy()

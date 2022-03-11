@@ -260,7 +260,9 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Kill"))
         {
+            Debug.Log("colisor que matou!!!");
             KillPlayer();
+            
         }
         else if (other.gameObject.CompareTag("Boss"))
         {
@@ -287,7 +289,13 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Kill"))
         {
-            KillPlayer();
+            Debug.Log("Mataste mi player");
+            Debug.Log(other.gameObject.name);
+            if (!weapon.IsAttacking)
+            {
+                KillPlayer();
+            }
+            
         }
        
         
