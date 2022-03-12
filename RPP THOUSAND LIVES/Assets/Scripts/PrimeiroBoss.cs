@@ -38,12 +38,15 @@ public class PrimeiroBoss : MonoBehaviour
     private int _bossState = 1;
 
     private Animator _bossAnimator;
+
+    private SpriteRenderer _bossSpriteRenderer;
     
     
     
     // Start is called before the first frame update
     void Start()
     {
+        _bossSpriteRenderer = GetComponent<SpriteRenderer>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _bossAnimator = GetComponent<Animator>();
         _bossCollider2D = GetComponent<BoxCollider2D>();
@@ -96,6 +99,7 @@ public class PrimeiroBoss : MonoBehaviour
         if (other != null && other.collider.CompareTag("Spear"))
         {
             bossLife -= 1;
+            StartCoroutine(ChangeColor());
         }
        
         
@@ -106,6 +110,7 @@ public class PrimeiroBoss : MonoBehaviour
         if (other != null && other.CompareTag("MeleeAttack"))
         {
             bossLife -= 2;
+            StartCoroutine(ChangeColor());
         }
         else if (other != null && other.CompareTag("Kill"))
         {
@@ -194,5 +199,12 @@ public class PrimeiroBoss : MonoBehaviour
         {
             gameObject.transform.rotation = Quaternion.Euler(0,180, 0);
         }
+    }
+
+    IEnumerator ChangeColor()
+    {
+        _bossSpriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        _bossSpriteRenderer.color = Color.white;
     }
 }

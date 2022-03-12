@@ -17,15 +17,17 @@ public class ThrowSpear : MonoBehaviour
 
     private Rigidbody2D rigidBody;
 
-    private Collider2D _collider2D;
+    private Collider2D _collider2D, _ColliderDoMeio;
     // criar variavel para guardar o collider
     
     // Start is called before the first frame update
     void Start()
     {
+        _ColliderDoMeio = GameObject.Find("Colider do DoubleAttack").GetComponent<BoxCollider2D>();
         _collider2D = GetComponent<Collider2D>();
         rigidBody = GetComponent<Rigidbody2D>();
         rigidBody.velocity = -transform.right * _velocidade;
+        Physics2D.IgnoreCollision(_collider2D, _ColliderDoMeio, true);
     }
     
 
