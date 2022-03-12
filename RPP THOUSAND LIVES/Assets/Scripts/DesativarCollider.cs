@@ -29,7 +29,7 @@ public class DesativarCollider : MonoBehaviour
 
     private IEnumerator TurnToFalse()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         _colliderDoDoubleAttack.isTrigger = true;
     }
 

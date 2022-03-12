@@ -1,14 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
+using UnityEngine.Events;
 
 public class BGMController : MonoBehaviour
 {
     public AudioSource mainTheme;
 
     public AudioSource bossTheme;
+    
+    [Header("Custom event")] public UnityEvent customEvent;
 
     
     // Start is called before the first frame update
@@ -20,11 +25,13 @@ public class BGMController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        if (Keyboard.current.nKey.wasPressedThisFrame)
-        {
-            mainTheme.mute = true;
-            bossTheme.Play();
-        }
+      
+    }
+
+    public void ChangeMusic()
+    {
+        mainTheme.mute = true;
+        bossTheme.Play();
+        customEvent.Invoke();
     }
 }

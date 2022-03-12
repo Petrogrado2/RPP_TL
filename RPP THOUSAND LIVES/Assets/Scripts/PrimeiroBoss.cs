@@ -40,6 +40,8 @@ public class PrimeiroBoss : MonoBehaviour
     private Animator _bossAnimator;
 
     private SpriteRenderer _bossSpriteRenderer;
+
+    private bool _hitMiddleCollider;
     
     
     
@@ -101,7 +103,12 @@ public class PrimeiroBoss : MonoBehaviour
             bossLife -= 1;
             StartCoroutine(ChangeColor());
         }
-       
+
+        if (other != null && other.collider.CompareTag("MiddleCollider"))
+        {
+            _hitMiddleCollider = true;
+            Invoke("HitFalse", 1f);
+        }
         
     }
 
@@ -159,8 +166,8 @@ public class PrimeiroBoss : MonoBehaviour
 
     private IEnumerator ThrowAxe()
     {
-        
-      GameObject bossObject =  Instantiate(_axePrefab, _axePosition.position, _axePosition.rotation);
+        _bossAnimator.Play("Darius_Throw_Axe");
+        GameObject bossObject =  Instantiate(_axePrefab, _axePosition.position, _axePosition.rotation);
         _isWitAxe = false;
         yield return new WaitForSeconds(3);
         bossObject.GetComponent<ThrowAxe>().bossPosition = transform;
@@ -169,6 +176,7 @@ public class PrimeiroBoss : MonoBehaviour
 
     private void StopBoss()
     {
+        
         _rigidbody2D.velocity = new Vector2(0,0);
     }
 
@@ -188,6 +196,7 @@ public class PrimeiroBoss : MonoBehaviour
     {
         _bossAnimator.SetFloat("Speed", Math.Abs(velocidade) );
         _bossAnimator.SetBool("IsThrowingAxe", _isWitAxe);
+        _bossAnimator.SetBool("HitMiddleCollider", _hitMiddleCollider);
     }
     private void FlipEnemy()
     {
@@ -200,6 +209,12 @@ public class PrimeiroBoss : MonoBehaviour
             gameObject.transform.rotation = Quaternion.Euler(0,180, 0);
         }
     }
+
+    private void HitFalse()
+    {
+        _hitMiddleCollider = false;
+    }
+    
 
     IEnumerator ChangeColor()
     {
