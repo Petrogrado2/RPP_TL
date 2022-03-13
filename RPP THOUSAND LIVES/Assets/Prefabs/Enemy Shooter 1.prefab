@@ -195,7 +195,7 @@ MonoBehaviour:
   playerLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  rayLength: 55.3
+  rayLength: 20.75
   isOnSight: 0
   timeToWait: 1
   audioTiro: {fileID: 8833238423663509018}

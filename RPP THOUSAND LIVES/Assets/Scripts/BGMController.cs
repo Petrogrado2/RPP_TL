@@ -12,9 +12,12 @@ public class BGMController : MonoBehaviour
     public AudioSource mainTheme;
 
     public AudioSource bossTheme;
-    
-    [Header("Custom event")] public UnityEvent customEvent;
 
+    public GameObject triggerMusic;
+
+    public bool iniciarMusica2;
+
+    private int _variavel = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -25,13 +28,26 @@ public class BGMController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        switch (_variavel)
+        {
+            case 1:
+                bossTheme.Play();
+                break;
+        }
+        
+        iniciarMusica2 = triggerMusic.GetComponent<PlayerController>().iniciarMusica;
+
+        if (iniciarMusica2)
+        { 
+            mainTheme.Stop();
+            _variavel = 1;
+        }
     }
 
-    public void ChangeMusic()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        mainTheme.mute = true;
-        bossTheme.Play();
-        customEvent.Invoke();
+        
     }
+
+    
 }

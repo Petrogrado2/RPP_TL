@@ -36,6 +36,7 @@ public class BulletEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        AnimationUpdates();
         RaycastHit2D enemySigHit2D = Physics2D.Raycast(enemySight.position, Vector2.left, rayLength, playerLayerMask);
 
         if (enemySigHit2D.collider != null)
@@ -63,7 +64,10 @@ public class BulletEnemy : MonoBehaviour
         
     }
 
-   
+    void AnimationUpdates()
+    {
+        _enemyShooterAnimator.SetBool("IsOnSight", isOnSight);
+    }
 
    
    

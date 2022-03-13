@@ -68,6 +68,10 @@ public class PlayerController : MonoBehaviour
 
     public AudioSource audioMeleeAttack;
 
+    public bool iniciarMusica;
+
+    public bool activeBoss = false;
+
    
 
    
@@ -284,6 +288,9 @@ public class PlayerController : MonoBehaviour
             }
             else if (CameraSwitcher.IsActiveCamera(playerCamera))
             {
+                iniciarMusica = true;
+                Debug.Log("ativar boss");
+                activeBoss = true;
                 CameraSwitcher.SwitchCamera(bossFightCamera);
             }
         }

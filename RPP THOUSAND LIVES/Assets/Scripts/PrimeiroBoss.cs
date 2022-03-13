@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+
 public class PrimeiroBoss : MonoBehaviour
 {
     //estado 1: atirar machado
@@ -42,6 +43,10 @@ public class PrimeiroBoss : MonoBehaviour
     private SpriteRenderer _bossSpriteRenderer;
 
     private bool _hitMiddleCollider;
+
+    public GameObject player;
+
+    public bool activeBoss2;
     
     
     
@@ -56,7 +61,7 @@ public class PrimeiroBoss : MonoBehaviour
        _grounCollider2D = GameObject.Find("LevelBase").GetComponent<TilemapCollider2D>();
        Physics2D.IgnoreCollision(_colliderDoMeio, _grounCollider2D, true);
         Physics2D.IgnoreCollision(_bossCollider2D, _grounCollider2D, true);
-
+        
     }
 
     // Update is called once per frame
@@ -67,7 +72,11 @@ public class PrimeiroBoss : MonoBehaviour
             Destroy(gameObject);
         }
         
-            //StartCoroutine(DoubleAttack());
+
+        activeBoss2 = player.GetComponent<PlayerController>().activeBoss;
+       
+
+        
         BossAnimations();
        
         switch (_bossState)
@@ -90,8 +99,9 @@ public class PrimeiroBoss : MonoBehaviour
         }
                 
     }
-        
-      
+
+
+  
         
     
     
