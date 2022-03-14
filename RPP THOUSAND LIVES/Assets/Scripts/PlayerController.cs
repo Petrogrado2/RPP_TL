@@ -67,8 +67,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource audioMorte;
 
     public AudioSource audioMeleeAttack;
-
-    public bool iniciarMusica;
+    
 
     public bool activeBoss = false;
 
@@ -110,7 +109,7 @@ public class PlayerController : MonoBehaviour
         }
 
         _playerCollider = GetComponent<BoxCollider2D>();
-        _bossGroundCollider = GameObject.Find("Boss ground (1)").GetComponent<BoxCollider2D>();
+        _bossGroundCollider = GameObject.Find("Boss ground").GetComponent<BoxCollider2D>();
         _colliderDoDoubleAttack = GameObject.Find("Colider do DoubleAttack").GetComponent<BoxCollider2D>();
         Physics2D.IgnoreCollision(_playerCollider, _bossGroundCollider, true);
         Physics2D.IgnoreCollision(_playerCollider, _colliderDoDoubleAttack, true);
@@ -288,7 +287,6 @@ public class PlayerController : MonoBehaviour
             }
             else if (CameraSwitcher.IsActiveCamera(playerCamera))
             {
-                iniciarMusica = true;
                 Debug.Log("ativar boss");
                 activeBoss = true;
                 CameraSwitcher.SwitchCamera(bossFightCamera);
@@ -304,7 +302,10 @@ public class PlayerController : MonoBehaviour
             }
             
         }
-       
+        else if(other.gameObject.CompareTag("Boss"))
+        {
+            KillPlayer();
+        }
         
     }
 

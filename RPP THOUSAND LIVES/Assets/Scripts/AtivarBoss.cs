@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class AtivarBoss : MonoBehaviour
 {
-    public delegate void StartBoss();
-
-    public static event StartBoss OnTriggered;
+    public bool activeBoss;
 
     public bool bossTrigger;
+
+    public int bossState = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +18,9 @@ public class AtivarBoss : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other != null && other.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            if (OnTriggered != null)
-            {
-                OnTriggered();
-            }
+            bossState = 1;
         }
     }
 

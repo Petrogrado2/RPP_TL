@@ -44,7 +44,7 @@ public class PrimeiroBoss : MonoBehaviour
 
     private bool _hitMiddleCollider;
 
-    public GameObject player;
+    public GameObject bossFightTrigger;
 
     public bool activeBoss2;
     
@@ -73,7 +73,9 @@ public class PrimeiroBoss : MonoBehaviour
         }
         
 
-        activeBoss2 = player.GetComponent<PlayerController>().activeBoss;
+        //_bossState = bossFightTrigger.GetComponent<AtivarBoss>().bossState;
+
+       
        
 
         
@@ -151,6 +153,7 @@ public class PrimeiroBoss : MonoBehaviour
            
             Debug.Log("Para boss");
         }
+        
        
     }
 

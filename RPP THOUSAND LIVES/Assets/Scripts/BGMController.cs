@@ -28,26 +28,8 @@ public class BGMController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switch (_variavel)
-        {
-            case 1:
-                bossTheme.Play();
-                break;
-        }
-        
-        iniciarMusica2 = triggerMusic.GetComponent<PlayerController>().iniciarMusica;
-
-        if (iniciarMusica2)
-        { 
-            mainTheme.Stop();
-            _variavel = 1;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
         
     }
 
-    
+   
 }

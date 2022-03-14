@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class MusicTrigger : MonoBehaviour
 {
-    [Header("Custom event")] public UnityEvent customEvent;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +18,4 @@ public class MusicTrigger : MonoBehaviour
         
     }
 
-    public void aaaa()
-    {
-        customEvent.Invoke();
-    }
 }
