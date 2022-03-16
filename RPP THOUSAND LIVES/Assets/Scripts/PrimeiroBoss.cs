@@ -18,8 +18,6 @@ public class PrimeiroBoss : MonoBehaviour
 
     private Rigidbody2D _rigidbody2D;
 
-    private bool isEnreged;
-
     private bool _isWitAxe = true;
 
     public float velocidade;
@@ -36,7 +34,7 @@ public class PrimeiroBoss : MonoBehaviour
 
     private bool _faceFlip = true;
 
-    private int _bossState = 1;
+    private int _bossState = 5;
 
     private Animator _bossAnimator;
 
@@ -47,9 +45,17 @@ public class PrimeiroBoss : MonoBehaviour
     public GameObject bossFightTrigger;
 
     public bool activeBoss2;
-    
-    
-    
+
+    private void OnEnable()
+    {
+        TriggerObserverManager.foiAtivado += OnBossActived;
+    }
+
+    private void OnDisable()
+    {
+        TriggerObserverManager.foiAtivado -= OnBossActived;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,7 +67,7 @@ public class PrimeiroBoss : MonoBehaviour
        _grounCollider2D = GameObject.Find("LevelBase").GetComponent<TilemapCollider2D>();
        Physics2D.IgnoreCollision(_colliderDoMeio, _grounCollider2D, true);
         Physics2D.IgnoreCollision(_bossCollider2D, _grounCollider2D, true);
-        
+
     }
 
     // Update is called once per frame
@@ -75,7 +81,7 @@ public class PrimeiroBoss : MonoBehaviour
 
         //_bossState = bossFightTrigger.GetComponent<AtivarBoss>().bossState;
 
-       
+        
        
 
         
@@ -98,6 +104,7 @@ public class PrimeiroBoss : MonoBehaviour
             case 4:
                 StopBoss();
                 break;
+            
         }
                 
     }
@@ -156,6 +163,7 @@ public class PrimeiroBoss : MonoBehaviour
         
        
     }
+    
 
     private IEnumerator GoForward()
     {
@@ -198,13 +206,7 @@ public class PrimeiroBoss : MonoBehaviour
         _bossState = 1;
     }
 
-    private IEnumerator DoubleAttack()
-    {
-        yield return new WaitForSeconds(1);
-        _rigidbody2D.AddForce(new Vector2(-forca,0), ForceMode2D.Impulse);
-     
-    }
-
+   
     private void BossAnimations()
     {
         _bossAnimator.SetFloat("Speed", Math.Abs(velocidade) );
@@ -234,5 +236,10 @@ public class PrimeiroBoss : MonoBehaviour
         _bossSpriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
         _bossSpriteRenderer.color = Color.white;
+    }
+
+    public void OnBossActived(int state)
+    {
+        _bossState = 1;
     }
 }
