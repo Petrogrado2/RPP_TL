@@ -10,8 +10,7 @@ public class TriggerObserverManager : MonoBehaviour
     public delegate void AtivouBossDelegate(int estadoBoss);
 
     public static event AtivouBossDelegate foiAtivado;
-    public static event Action<int> ONBossActived;
-
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {

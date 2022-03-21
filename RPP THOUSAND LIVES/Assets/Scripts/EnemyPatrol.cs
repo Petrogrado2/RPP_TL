@@ -81,7 +81,6 @@ public class EnemyPatrol : MonoBehaviour
         _enemyRigidbody2D.bodyType = RigidbodyType2D.Static;
         _enemyPatrolAnimator.SetTrigger("Dead");
         Invoke("DestroyEnemy", 0.5f);
-        Debug.Log("Kkkkkkkk");
     }
 
     private void DestroyEnemy()

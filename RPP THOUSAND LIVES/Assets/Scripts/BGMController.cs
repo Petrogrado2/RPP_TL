@@ -9,20 +9,14 @@ using UnityEngine.Events;
 
 public class BGMController : MonoBehaviour
 {
-    public AudioSource mainTheme;
+    public AudioSource BGM;
 
-    public AudioSource bossTheme;
-
-    public GameObject triggerMusic;
-
-    public bool iniciarMusica2;
-
-    private int _variavel = 0;
+    
     
     // Start is called before the first frame update
     void Start()
     {
-        mainTheme.Play();
+       
     }
 
     // Update is called once per frame
@@ -31,5 +25,14 @@ public class BGMController : MonoBehaviour
         
     }
 
-   
+    public void ChangeBGM(AudioClip music)
+    {
+        if (BGM.clip.name == music.name)
+        {
+            return;
+        }
+        BGM.Stop();
+        BGM.clip = music;
+        BGM.Play();
+    }
 }
