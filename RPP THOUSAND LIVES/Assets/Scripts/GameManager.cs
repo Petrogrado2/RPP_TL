@@ -11,12 +11,9 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public int lives = 1000;
-
-    public TMP_Text LivesText;
-
-    private void Start()
+    
+    private void Awake()
     {
-        LivesText = GameObject.Find("LivesText").GetComponent<TMP_Text>();
         if (instance == null)
         {
             instance = this;
@@ -26,6 +23,13 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+
+
+    private void Start()
+    {
+        HUDObserverManager.LivesChanged(lives);
     }
 
     private void Update()
@@ -66,6 +70,7 @@ public class GameManager : MonoBehaviour
     public void CheckDeath()
     {
         lives--;
+        HUDObserverManager.LivesChanged(lives);
 
         if (lives < 0)
         {
@@ -91,9 +96,5 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void UpdateLives()
-    {
-        lives--;
-        
-    }
+    
 }
