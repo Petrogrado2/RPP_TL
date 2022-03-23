@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -9,10 +10,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public int lives = 3;
+    public int lives = 1000;
+
+    public TMP_Text LivesText;
 
     private void Start()
     {
+        LivesText = GameObject.Find("LivesText").GetComponent<TMP_Text>();
         if (instance == null)
         {
             instance = this;
@@ -85,5 +89,11 @@ public class GameManager : MonoBehaviour
             lives = 3;
             LoadLevel1();
         }
+    }
+
+    public void UpdateLives()
+    {
+        lives--;
+        
     }
 }

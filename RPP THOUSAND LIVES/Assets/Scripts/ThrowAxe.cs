@@ -26,8 +26,9 @@ public class ThrowAxe : MonoBehaviour
     private void FixedUpdate()
     {
        Invoke("Back", 1f);
+       StartCoroutine(DestroyAxe());
 
-       
+
     }
 
     private void Back()
@@ -48,5 +49,11 @@ public class ThrowAxe : MonoBehaviour
             Debug.Log("entrei");
             Destroy(gameObject);
         }
+    }
+
+    public IEnumerator DestroyAxe()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
 }
