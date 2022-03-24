@@ -5,6 +5,8 @@ using  UnityEngine.UI;
 
 public class DialogueControl : MonoBehaviour
 {
+    
+    
     [Header("Components")] 
     public GameObject dialogueObj;
     public Image profile;
